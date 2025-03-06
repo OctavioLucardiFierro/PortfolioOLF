@@ -6,9 +6,9 @@ import arrow_icon from '../../assets/arrow_icon.svg'
 const ExperienciaYServicios = () => {
   return (
     <div>
-        <div className='services'>
+        <div id='services' className='services'>
             <div className="services-title">
-                <h1>Mis servicios</h1>
+                <h1>Experiencia laboral</h1>
                 <img src={theme_pattern} alt="" />
             </div>
             <div className="services-container">
@@ -19,7 +19,7 @@ const ExperienciaYServicios = () => {
                         <h2>{service.s_name}</h2>
                         <p>{service.s_desc}</p>
                         <div className="service-readmore">
-                            <p>Ver Más</p>
+                        <a target="_blank" href='https://www.linkedin.com/in/octavio-lucardi-fierro-4aba90251/details/experience/'><p>Ver Más</p></a>
                             <img src={arrow_icon} alt="" />
                         </div>
                     </div>

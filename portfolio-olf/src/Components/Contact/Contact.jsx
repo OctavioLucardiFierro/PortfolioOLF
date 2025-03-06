@@ -5,8 +5,32 @@ import mail_icon from '../../assets/mail_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 const Contact = () => {
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "a91c0466-3abb-4ef3-bbbf-51083e7233dc");
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
+    
+        if (res.success) {
+          alert(res.message)
+        }
+      };
+
   return (
-    <div className='contact'>
+    <div id='contact' className='contact'>
         <div className="contact-title">
             <h1>Contactame</h1>
             <img src={theme_pattern} alt="" />
@@ -14,7 +38,7 @@ const Contact = () => {
         <div className="contact-section">
             <div className="contact-left">
                 <h1>Hablemos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos deleniti corporis incidunt? Minus placeat voluptatibus tenetur animi tempora at debitis incidunt officiis recusandae inventore, architecto facilis optio voluptatum eos?</p>
+                <p>¡Me encantaría escucharte! Si estás interesado en contratar o tenes alguna pregunta, contáctame con alguno de estos metodos o dejame un mensaje</p>
                 <div className="contact-details">
                     <div className="contact-detail">
                         <img src={mail_icon} alt="" />
@@ -30,7 +54,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="contact-right">
+            <form onSubmit={onSubmit} className="contact-right">
                 <label htmlFor="">Tú nombre</label>
                 <input type="text" placeholder='Ingresa tú nombre' name="name"/>
                 <label htmlFor="">Email</label>
@@ -38,7 +62,7 @@ const Contact = () => {
                 <label htmlFor="">Escribe tú mensaje aquí</label>
                 <textarea name="message" rows="8" placeholder='Ingresa tu mensaje'></textarea>
                 <button type='submit' className="contact-submit">Enviar ahora</button>
-            </div>
+            </form>
         </div>
     </div>
   )
