@@ -80,7 +80,8 @@ a:visited{
 }
 @media(max-width:1095px){
     .services{
-        align-items: start;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 70px;
         margin: 20px 70px;
     }

@@ -1,9 +1,9 @@
-import project1_img from '../assets/project_1-5xYOfh0z.svg';
-import project2_img from '../assets/project_2-ko3fLZz-.svg';
-import project3_img from '../assets/project_3-G9x9U39U.svg';
-import project4_img from '../assets/project_4-KRxErSUy.svg';
-import project5_img from '../assets/project_5-u53cBB9v.svg';
-import project6_img from '../assets/project_6-VGGcxYRF.svg';
+import project1_img from '../assets/appMP3.png';
+import project2_img from '../assets/Ejdepaguinas.png';
+import project3_img from '../assets/EjemploJuan5.png';
+import project4_img from '../assets/EjemploJuego10.png';
+import project5_img from '../assets/CapturaWebTheLastOfUs.png';
+import project6_img from '../assets/Chat Cliente-ServidorJAVA.png';
 
 const MyWork_Data = [
     {

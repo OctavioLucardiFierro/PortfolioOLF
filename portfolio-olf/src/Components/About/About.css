@@ -101,16 +101,18 @@
 }
 .about-container{
     display: flex;
-    
     justify-content: space-between;
 }
 @media(max-width: 1024px){
     .about {
         gap:50px;
         margin: 50px 6%;
-        align-items: start
+        align-items: center
     }
-
+    .about-container{
+        display: flex;
+        justify-content: space-around;
+    }
     .about-sections {
         flex-direction: column
     }

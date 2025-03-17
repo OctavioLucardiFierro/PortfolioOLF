@@ -5,7 +5,6 @@ import Servicios_Data from '../../assets/serviciosData.js'
 import arrow_icon from '../../assets/arrow_icon.svg'
 const ExperienciaYServicios = () => {
   return (
-    <div>
         <div id='services' className='services'>
             <div className="services-title">
                 <h1>Experiencia laboral</h1>
@@ -20,14 +19,13 @@ const ExperienciaYServicios = () => {
                         <p>{service.s_desc}</p>
                         <div className="service-readmore">
                         <a target="_blank" href='https://www.linkedin.com/in/octavio-lucardi-fierro-4aba90251/details/experience/'><p>Ver Más</p></a>
-                            <img src={arrow_icon} alt="" />
+                        <a target="_blank" href='https://www.linkedin.com/in/octavio-lucardi-fierro-4aba90251/details/experience/'><img src={arrow_icon} alt="" /></a>
                         </div>
                     </div>
                     })
                 }
             </div>
         </div>
-    </div>
   )
 }
 
