@@ -35,7 +35,7 @@ const Navbar = () => {
           <img className='nav-mov-close'onClick={closeMenu} src={menu_close} alt="" />
             <li><AnchorLink className='anchor-link' href='#home'><p onClick={()=>setMenu("home")}>Inicio</p></AnchorLink> {menu==="home"? <img alt = '' src={theme_pattern}/>:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>Sobre mi</p> </AnchorLink>{menu==="about"? <img alt = '' src={theme_pattern}/>:<></>}</li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu("Service")}>Servicios</p> </AnchorLink>{menu==="Service"? <img alt = '' src={theme_pattern}/>:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu("Service")}>Experiencia</p> </AnchorLink>{menu==="Service"? <img alt = '' src={theme_pattern}/>:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>Portfolio</p> </AnchorLink>{menu==="work"? <img alt = '' src={theme_pattern}/>:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contacto</p> </AnchorLink>{menu==="contact"? <img alt = '' src={theme_pattern}/>:<></>}</li>
         </ul>

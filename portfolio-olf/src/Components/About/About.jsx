@@ -6,16 +6,15 @@ const About = () => {
   return (
     <div id='about' className='about'>
         <div className="about-title">
-            <h1>Sobre mi</h1>
+            <h1>Acerca de mi</h1>
             <img src={theme_pattern} alt="" />
         </div>
         <div className="about-sections">
-            <div className="about-left">
-                <img src={profile_img} alt="" />
-            </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>Soy un estudiante universitario al que le apasiona la programación Web y el desarrollo de videojuegos, tengo experiencia desarrollando varias webs de gestión para utilizarse de manera local, desarrollando videojuegos con Unity usando C#</p>
+                    <p>Soy un estudiante de ingeniería al que le apasiona la programación Web y el desarrollo de videojuegos, tengo experiencia desarrollando varias webs de gestión para utilizarse de manera local, desarrollando videojuegos con Unity usando C#.
+                        Durante el último año de mis estudios en la escuela técnica, tuve el honor de ser el abanderado.
+                    </p>
                     {
                     //poner aca otro p si se lo necesita
                     //<hr style={{width:"100%"}}/> estas iban abajo con las aptitudes
@@ -23,17 +22,34 @@ const About = () => {
                 </div>
                 <div className="about-container">
                     <div className="about-skills">
-                        <div className="about-habilidad"><p>HTML y CSS </p></div>
+                        <div className="about-habilidad"><p>HTML</p></div>
+                        <div className="about-habilidad"><p>CSS</p></div>
                         <div className="about-habilidad"><p>Python </p></div>
                         <div className="about-habilidad"><p>C# </p></div>
+                        <div className="about-habilidad"><p>Figma</p></div>
+                    </div>
+                    <div className="about-skills">
+                        <div className="about-habilidad"><p>React JS </p></div>
+                        <div className="about-habilidad"><p>Git</p></div>
+                        <div className="about-habilidad"><p>Github</p></div>
+                        <div className="about-habilidad"><p>Unity</p></div>
+                        <div className="about-habilidad"><p>OOP</p></div>
+                    </div>
+                    <div className="about-skills">
+                        <div className="about-habilidad"><p>JavaScript</p></div>
+                        <div className="about-habilidad"><p>Visual Studio</p></div>
+                        <div className="about-habilidad"><p>Visual Studio Code</p></div>
+                        <div className="about-habilidad"><p>Bootstrap</p></div>
                         <div className="about-habilidad"><p>C++ </p></div>
                     </div>
                     <div className="about-skills">
-                        <div className="about-habilidad"><p>JavaScript </p></div>
-                        <div className="about-habilidad"><p>React JS </p></div>
-                        <div className="about-habilidad"><p>Git y GitHub </p></div>
-                        <div className="about-habilidad"><p>Unity</p></div>
+                        <div className="about-habilidad"><p>Tkinter</p></div>
+                        <div className="about-habilidad"><p>MySQL</p></div>
+                        <div className="about-habilidad"><p>PHP</p></div>
+                        <div className="about-habilidad"><p>Trello </p></div>
+                        <div className="about-habilidad"><p>PhpMyAdmin</p></div>
                     </div>
+                    
                 </div>
             </div>
         </div>

@@ -1,27 +1,18 @@
 import React from 'react'
 import './Hero.css'
 import profile_image from '../../assets/FotoPerfil.jpg'
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import pdf from '../../assets/OctavioLucardiFierro_CV_2025.pdf'
 
 const Hero = () => {
-  const handleDownload = () => {
-    const url = "../../assets/OctavioLucardiFierro_CV_2025.pdf"; 
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = "Curriculum.pdf"; 
-    anchor.click();
-  };
-
   return (
     <div id='home' className='hero'>
         <img src={profile_image} alt="" />
-        <h1>Soy <span>Octavio Lucardi Fierro,</span> desarrollador frontend y videojuegos en Argentina</h1>
-        <p>Soy un desarrollador Argentino, apasionado por la programacion en todas sus formas</p>
+        <h1><span>Octavio Lucardi Fierro</span>, desarrollador de videojuegos y frontend</h1>
+        <p>Soy un desarrollador apasionado por la programación en todas sus formas</p>
         <div className="hero-action">
-            <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contactame</p> </AnchorLink></div>
-            <div className="hero-resume" onClick={handleDownload}>Mi Curriculum</div>
+        <a href="https://www.linkedin.com/in/octavio-lucardi-fierro-4aba90251/" target={'_blank'}><div className="hero-connect">LinkedIn</div></a>
+            <a href={pdf} target="_blank" rel="noopener noreferrer" download="CV.pdf"><div className="hero-resume">Mi Curriculum</div> </a>
         </div>
-        
     </div>
   )
 }

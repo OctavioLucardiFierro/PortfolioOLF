@@ -13,15 +13,17 @@ const ExperienciaYServicios = () => {
             <div className="services-container">
                 {
                     Servicios_Data.map((service, index)=>{
-                    return <div key={index} className="services-format">
-                        <h3>{service.s_no}</h3>
-                        <h2>{service.s_name}</h2>
-                        <p>{service.s_desc}</p>
-                        <div className="service-readmore">
-                        <a target="_blank" href='https://www.linkedin.com/in/octavio-lucardi-fierro-4aba90251/details/experience/'><p>Ver Más</p></a>
-                        <a target="_blank" href='https://www.linkedin.com/in/octavio-lucardi-fierro-4aba90251/details/experience/'><img src={arrow_icon} alt="" /></a>
+                    return <a target="_blank" href='https://www.linkedin.com/in/octavio-lucardi-fierro-4aba90251/details/experience/'>
+                        <div key={index} className="services-format">
+                            <h3>{service.s_no}</h3>
+                            <h2>{service.s_name}</h2>
+                            <p>{service.s_desc}</p>
+                            <div className="service-readmore">
+                                <p>Ver Más</p>
+                                <img src={arrow_icon} alt="" />
+                            </div>
                         </div>
-                    </div>
+                    </a> 
                     })
                 }
             </div>

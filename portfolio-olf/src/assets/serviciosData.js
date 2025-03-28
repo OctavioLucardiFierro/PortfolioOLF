@@ -7,7 +7,7 @@ const Servicios_Data =[
     {
         s_no:"2",
         s_name:"Desarrollo de Videojuegos",
-        s_desc:"Tareas de optimización, creacion de mecanicas, etc"
+        s_desc:"Tareas de optimización, creación de mecánicas, etc"
     },
     {
         s_no:"3",

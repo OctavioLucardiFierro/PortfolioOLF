@@ -31,7 +31,7 @@
 .about-sections .about-right{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 30px;
 }
 .about-sections .about-right .about-para{
     display: flex;
@@ -101,7 +101,8 @@
 }
 .about-container{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: center;
 }
 @media(max-width: 1024px){
     .about {
@@ -110,8 +111,11 @@
         align-items: center
     }
     .about-container{
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        flex-direction: column;
+        
     }
     .about-sections {
         flex-direction: column
@@ -125,13 +129,10 @@
         line-height: 25px
     }
 
-    .about-skill p {
-        font-size: 16px;
+    .about-habilidad p {
+        width: 100%;
+        font-size: 13px;
         min-width: 90px
-    }
-
-    .about-skill hr {
-        height: 6px
     }
 
     .about-achievements {
@@ -175,7 +176,7 @@
 }
 @media(max-width:535px){
     .about-skills{
-        width: 30%;
+        width: 100%;
     }
     .about-skills p{
         font-size: 20px;

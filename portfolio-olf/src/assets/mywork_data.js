@@ -9,32 +9,38 @@ const MyWork_Data = [
     {
         w_no:1,
         w_name: "project 1",
-        w_img: project1_img
+        w_img: project1_img,
+        w_link: "https://github.com/OctavioLucardiFierro/App-Descargar-MP3"
     },
     {
         w_no:2,
         w_name: "project 2",
-        w_img: project2_img
+        w_img: project2_img,
+        w_link: ""
     },
     {
         w_no:3,
         w_name: "project 3",
-        w_img: project3_img
+        w_img: project3_img,
+        w_link: "https://github.com/ipopotamo/I.R.O.J.I"
     },
     {
         w_no:4,
         w_name: "project 4",
-        w_img: project4_img
+        w_img: project4_img,
+        w_link: "https://octaviolucardifierro.github.io/DemoJuegoPelea/"
     },
     {
         w_no:5,
         w_name: "project 5",
-        w_img: project5_img
+        w_img: project5_img,
+        w_link: ""
     },
     {
         w_no:6,
         w_name: "project 6",
-        w_img: project6_img
+        w_img: project6_img,
+        w_link: ""
     }
 ]
 

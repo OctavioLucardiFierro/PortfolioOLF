@@ -20,9 +20,8 @@ const Footer = () => {
             © 2025 Octavio Lucardi Fierro. Todos los derechos reservados.
             </p>
             <div className="footer-bottom-right">
-                <p>Terminos de servicio</p>
-                <p>Policticas de privacidad</p>
-                <p>Contacta conmigo</p>
+                <p>Términos de servicio</p>
+                <p>Políticas de privacidad</p>
             </div>
         </div>
     </div>
