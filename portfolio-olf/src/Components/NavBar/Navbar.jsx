@@ -37,9 +37,10 @@ const Navbar = () => {
             <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>Sobre mi</p> </AnchorLink>{menu==="about"? <img alt = '' src={theme_pattern}/>:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu("Service")}>Experiencia</p> </AnchorLink>{menu==="Service"? <img alt = '' src={theme_pattern}/>:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>Portfolio</p> </AnchorLink>{menu==="work"? <img alt = '' src={theme_pattern}/>:<></>}</li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#school'><p onClick={()=>setMenu("school")}>Cursos</p> </AnchorLink>{menu==="school"? <img alt = '' src={theme_pattern}/>:<></>}</li>
             <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contacto</p> </AnchorLink>{menu==="contact"? <img alt = '' src={theme_pattern}/>:<></>}</li>
         </ul>
-        <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contactame</p> </AnchorLink></div>
+        <div className="nav-connect"><a target="_blank" className='anchor-link' offset={50} href='https://github.com/OctavioLucardiFierro'>Mi GitHub</a></div>
     </div>
   )
 }

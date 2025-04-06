@@ -113,15 +113,6 @@ a:visited{
     }
 }
 @media(max-width:615px){
-    .services-title h1{
-        padding: 0;
-        font-size: 50px;
-    }
-    .services-title img{
-        width: 95px;
-        left: 0;
-        margin-left: 80px;
-    }
     .services-format{
         gap: 20px;
         padding: 15px;
@@ -136,6 +127,17 @@ a:visited{
         background-image: linear-gradient(45deg,#3f0028,#582300);
         transform: scale(1.025);
         transition: 0.4s;
+    }
+}
+@media(max-width:582px){
+    .services-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+    .services-title img{
+        width: 95px;
+        left: 0;
+        margin-left: 80px;
     }
 }
 @media(max-width:555px){

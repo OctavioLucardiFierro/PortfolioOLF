@@ -1,0 +1,99 @@
+.school{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+    margin-bottom: 20px;
+}
+.school-title{
+    position: relative;
+}
+.school-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.school-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.school-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+.school-container img{
+    width: 100%;
+    border-radius: 20px;
+}
+.curso{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+}
+.curso h1{
+    line-height: 35px;
+    text-align: center;
+}
+.curso:hover{
+    transform: scale(1.05);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+@media (max-width: 1100px) {
+    .school{
+        margin: 10px 25px;
+        margin-bottom: 20px;
+    }
+    .school-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:974px){
+    .school-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+    .school-title img{
+        width: 30%;
+        right: -30px;
+        top:30px
+    }
+}
+@media (max-width:820px){
+    .school-title img{
+        width: 130px;
+        right: -20px;
+        
+    }
+    .curso{
+        padding: 10px;
+        gap: 10px;
+    }
+    .curso h1{
+        font-size: 20px;
+    }
+}
+@media (max-width:530px){
+    .school-title img{
+        width: 130px;
+        left: 190px;
+        margin-top: 80px;
+    }
+    .school-title{
+        text-align: center;
+    }
+    .school-container p{
+        display: none;
+    }
+}

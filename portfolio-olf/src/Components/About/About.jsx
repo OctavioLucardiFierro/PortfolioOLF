@@ -13,9 +13,12 @@ const About = () => {
             <div className="about-right">
                 <div className="about-para">
                     <p>Soy un estudiante de ingeniería al que le apasiona la programación Web y el desarrollo de videojuegos, tengo experiencia desarrollando varias webs de gestión para utilizarse de manera local, desarrollando videojuegos con Unity usando C#.
-                        Durante el último año de mis estudios en la escuela técnica, tuve el honor de ser el abanderado.
+                        <br />
+                        <br />
+                        Durante el transcurso de mis estudios en la escuela técnica, pude participar en la First LEGO League (2019), un evento de robótica en el cual los alumnos 1er, 2do y 3er año buscan soluciones a diferentes problemáticas planteadas en base a un tema, en nuestro caso fue "CITY SHAPERS" en la cual pudimos salir 3ros en el ranking de robótica con 365 puntos y ganamos una mención de Proyecto de Innovación (mejor proyecto de innovación de Argentina). En el último año de la escuela técnica tuve el honor de ser el abanderado que llevaba la bandera nacional.
                     </p>
                     {
+                    // post de FLL: https://www.instagram.com/p/B5tIlqohrZp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1
                     //poner aca otro p si se lo necesita
                     //<hr style={{width:"100%"}}/> estas iban abajo con las aptitudes
                     }
