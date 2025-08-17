@@ -28,7 +28,7 @@ const MyWork_Data = [
         w_no:4,
         w_name: "project 4",
         w_img: project4_img,
-        w_link: "https://octaviolucardifierro.github.io/DemoJuegoPelea/"
+        w_link: "https://dragon-ball-game-olf.netlify.app" 
     },
     {
         w_no:5,
